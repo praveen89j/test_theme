@@ -1,0 +1,26 @@
+name = mysubthemename
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/mysubthemename.reset.css
+stylesheets[all][] = css/mysubthemename.styles.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/mysubthemename.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[header] = Header
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
