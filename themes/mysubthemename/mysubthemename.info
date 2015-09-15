@@ -10,6 +10,7 @@ core = 7.x
 ; ========================================
 stylesheets[all][] = css/mysubthemename.reset.css
 stylesheets[all][] = css/mysubthemename.styles.css
+stylesheets[all][] = css/mysubthemename.custom.css
 
 ; ========================================
 ; Scripts
@@ -21,6 +22,4 @@ scripts[] = js/mysubthemename.behaviors.js
 ; ========================================
 regions[header] = Header
 regions[content] = Content
-regions[sidebar_first] = First Sidebar
-regions[sidebar_second] = Second Sidebar
 regions[footer] = Footer
