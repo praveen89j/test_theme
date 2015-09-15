@@ -8,3 +8,5 @@ Drush command to create sub theme for Omega
 https://www.drupal.org/node/1298676
 
 drush omega-subtheme mysubthemename
+
+http://drupal.stackexchange.com/questions/96063/how-to-add-custom-css-file-to-subtheme-of-omega-kickstart-theme
