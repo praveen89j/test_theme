@@ -12,6 +12,7 @@ body {
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
+  padding: 15px;
 }
 .l-header {
   text-align:center;
@@ -32,3 +33,13 @@ body {
 .login_status span { 
   color:#ed6a00;
 }
+.main_menu {
+  border:1px solid #ccc;
+  background-color:#000;
+  color:#fff;
+}
+.menu li {
+  float:left;
+  padding:10px;
+}
+.clear{ clear:both; }

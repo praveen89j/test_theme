@@ -1,5 +1,5 @@
 <div class="wrapper">
-<div<?php print $attributes; ?>>
+ 
   <header class="l-header" role="banner">
     <!--<div class="l-branding">-->
       <?php if ($logo): ?>
@@ -7,15 +7,17 @@
 		<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       <?php endif; ?>
     <div class="login_status">
-      <span>welcome</span>
+      <span><?php global $user,$base_url; if(isset($user->name) && !empty($user->name)) { echo 'welcome : '.$user->name; } else { echo "<a href='$base_url/user'>Login</a>"; }?></span>
     </div>
       <?php print render($page['branding']); ?>
     <!--</div>-->
 
+  </header>
+<div class="main_menu">
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
-  </header>
-
+</div>
+<div class="clear"></div>
   <div class="l-main">
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
@@ -44,4 +46,4 @@
     <?php print render($page['footer']); ?>
   </footer>
 </div>
-</div>
+
