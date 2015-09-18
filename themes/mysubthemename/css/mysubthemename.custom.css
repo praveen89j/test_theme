@@ -3,9 +3,7 @@ img, media {
 }
 body {
   font-family: Verdana,Helvetica,sans-serif;
-  background-color: #e5e5e5;
-
-  
+  background-color: #e5e5e5; 
 }
 .wrapper {
   width:980px;
@@ -25,7 +23,9 @@ body {
   margin-right: 20%;
   padding-top: 0.5em;
 }
-
+.mobile_menu {
+  display:none;
+}
 .login_status {
   float: right;
 }
@@ -33,13 +33,126 @@ body {
 .login_status span { 
   color:#ed6a00;
 }
-.main_menu {
+
+.l-region--header {
+  float:none !important;
+  width:100% !important;
+}
+.menu {
   border:1px solid #ccc;
   background-color:#000;
-  color:#fff;
+  height:32px;
+}
+.menu .leaf {
+  list-style-image: none;
+  list-style-type: none;
 }
 .menu li {
   float:left;
   padding:10px;
+}
+.menu li a{
+  color:#fff;
+}
+@media screen and (max-width: 641px){
+	img, media {
+	  max-width: 100%;
+	}
+	body {
+	  font-family: Verdana,Helvetica,sans-serif;
+      background-color: #e5e5e5;
+	}
+	.wrapper {
+      width:100%;
+      background-color: #fff;
+      margin:0px;  
+      padding: 15px;
+    }
+	.site-logo {
+	  border-top: 9px solid #ed6a00;
+      display: block;
+	  width: 50%;
+    }
+
+    .l-header {
+      text-align:center;
+    }
+
+	.l-region--header {
+       float:none !important;
+       width:100% !important;
+    }
+    .mobile_menu {
+      display:block;
+	  cursor:pointer;
+	  border: 1px solid #ed6a00;
+    }
+	.menu {
+	  width:100%;
+	  border:1px solid #ccc;
+      background-color:#000;
+	  height:auto;
+	}
+    .menu li {
+	  float: none;
+      width: 100%
+    }
+	.login_status {
+      float: right;
+	  width: 50%;
+      padding-right: 26px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+	img, media {
+	  max-width: 100%;
+	}
+	body {
+	  font-family: Verdana,Helvetica,sans-serif;
+      background-color: #e5e5e5;
+	}
+	.wrapper {
+      width:100%;
+      background-color: #fff;
+      margin:0px;  
+      padding: 15px;
+    }
+	.site-logo {
+	  border-top: 9px solid #ed6a00;
+      display: block;
+	  width: 50%;
+    }
+
+    .l-header {
+      text-align:center;
+    }
+
+	.l-region--header {
+       float:none !important;
+       width:100% !important;
+    }
+    .mobile_menu {
+      display:block;
+	  cursor:pointer;
+	  border: 1px solid #ed6a00;
+    }
+	.menu {
+	  width:100%;
+	  border:1px solid #ccc;
+      background-color:#000;
+	  height:auto;
+	}
+    .menu li {
+	  float: none;
+      width: 100%
+    }
+	.login_status {
+      float: right;
+	  width: 50%;
+      padding-right: 26px;
+    }
+
 }
 .clear{ clear:both; }
