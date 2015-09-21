@@ -16,13 +16,6 @@ body {
   text-align:center;
 }
 
-.site-logo {
-  border-top: 9px solid #ed6a00;
-  display: block;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-top: 0.5em;
-}
 .mobile_menu {
   display:none;
 }
@@ -54,33 +47,57 @@ body {
 .menu li a{
   color:#fff;
 }
-@media screen and (max-width: 641px){
+.l-footer {
+  width:100%;
+}
+.colum-1 , .colum-2, .colum-3
+{
+	margin-top: 15px;
+	border:2px solid #ed6a00;
+	width:309px;
+	float:left;
+	padding:10px;
+	height: 200px;
+	background: #FFFFFF;
+	position: relative;
+	margin: 0 auto;
+	-webkit-box-shadow: 0 8px 6px -6px black,
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+  /*border:1px solid #ed6a00;*/
+}
+
+.colum-1 ul li , .colum-2 ul li , .colum-3 ul li {
+  list-style:none;
+  padding:0px;
+}
+
+
+@media screen and (max-width: 320px) and (min-height: 641px) {
+/* ...Mobile styles here... */
 	img, media {
 	  max-width: 100%;
 	}
+	
 	body {
 	  font-family: Verdana,Helvetica,sans-serif;
-      background-color: #e5e5e5;
 	}
 	.wrapper {
-      width:100%;
+      width:85%;
       background-color: #fff;
-      margin:0px;  
       padding: 15px;
     }
-	.site-logo {
-	  border-top: 9px solid #ed6a00;
-      display: block;
-	  width: 50%;
-    }
-
+	
     .l-header {
-      text-align:center;
+	  width:100%;
     }
 
 	.l-region--header {
        float:none !important;
        width:100% !important;
+    }
+	.site-logo {
+      width: 100%;
     }
     .mobile_menu {
       display:block;
@@ -92,65 +109,150 @@ body {
 	  border:1px solid #ccc;
       background-color:#000;
 	  height:auto;
+	  padding:0px;
 	}
     .menu li {
 	  float: none;
-      width: 100%
+      width: 85%;
+	  padding:10px;
     }
+	.menu li a{
+      color:#fff;
+	}
+	.expand_menu { 
+	  display:none;
+	}
 	.login_status {
       float: right;
-	  width: 50%;
+	  width: 100%;
+      /*padding-right: 26px;*/
+    }
+	.l-content h1 {
+	  font-size: 22px;
+	}
+	.l-content p {
+	  font-size: 14px;
+	}
+	.l-footer {
+		width:100%;
+	}
+	.colum-1 , .colum-2, .colum-3     {
+	  width: 91%;
+      border:1px solid #ed6a00;
+	}
+	input { 
+	  width:100%;
+	}
+
+	.tabs.tabs--primary.links--inline > li {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 1024px) and (min-height: 641px) {
+/* ...tablet styles here... */
+	img, media {
+	  max-width: 100%;
+	}
+	body {
+	  font-family: Verdana,Helvetica,sans-serif;
+      background-color: #e5e5e5;
+	}
+	.wrapper {
+      width:100%;
+      background-color: #fff;
+      margin:0px;  
+      padding: 15px 4px;
+    }
+	.site-logo img {
+	  display:block;
+      margin:auto;
+	}
+	.l-region--header {
+       float:none !important;
+       width:100% !important;
+    }
+    .mobile_menu {
+      display:block;
+	  cursor:pointer;
+	  border: 1px solid #ed6a00;
+	  width: 99%;
+    }
+	.menu {
+	  width:100%;
+	  padding: 0;
+	  border:1px solid #ccc;
+      background-color:#000;
+	  height:auto;
+	}
+    .menu li {
+	  float: none;
+      width: 100%;
+	  padding:5px;
+    }
+	.menu li a{
+      color:#fff;
+	}
+    .expand_menu { 
+	  display:none;
+	}
+	.login_status {
+      float: right;
+	 /* width: 50%;*/
       padding-right: 26px;
     }
+	.l-main {
+	  width: 99%;
+	}
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (min-width: 1024px) and (min-height: 800px){
+/* ...tablet styles here... */
 	img, media {
 	  max-width: 100%;
 	}
 	body {
 	  font-family: Verdana,Helvetica,sans-serif;
-      background-color: #e5e5e5;
+      background-color: yellow;
 	}
 	.wrapper {
       width:100%;
       background-color: #fff;
       margin:0px;  
-      padding: 15px;
+      padding: 15px 4px;
     }
-	.site-logo {
-	  border-top: 9px solid #ed6a00;
-      display: block;
-	  width: 50%;
-    }
-
-    .l-header {
-      text-align:center;
-    }
-
+	.site-logo img {
+	  display:block;
+      margin:auto;
+	}
 	.l-region--header {
        float:none !important;
        width:100% !important;
     }
-    .mobile_menu {
-      display:block;
-	  cursor:pointer;
-	  border: 1px solid #ed6a00;
-    }
+	.mobile_menu {
+	  display:none;
+	}
+    .expand_menu {
+	  display:block;
+	}
 	.menu {
 	  width:100%;
+	  padding: 0;
 	  border:1px solid #ccc;
       background-color:#000;
-	  height:auto;
+	  height:32px;
 	}
     .menu li {
-	  float: none;
-      width: 100%
+	  float: left;
+      width: auto;
+	  padding:5px;
     }
+	.menu li a{
+      color:#fff;
+	}
 	.login_status {
       float: right;
-	  width: 50%;
+	 /* width: 50%;*/
       padding-right: 26px;
     }
 
