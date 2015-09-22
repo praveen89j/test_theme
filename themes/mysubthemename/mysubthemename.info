@@ -10,7 +10,7 @@ core = 7.x
 ; ========================================
 stylesheets[all][] = css/mysubthemename.reset.css
 stylesheets[all][] = css/mysubthemename.styles.css
-stylesheets[all][] = css/mysubthemename.custom.css
+stylesheets[all][] = css/mysubthemename.media-queries.css
 
 ; ========================================
 ; Scripts
