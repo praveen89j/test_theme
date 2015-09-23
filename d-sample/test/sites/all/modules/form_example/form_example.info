@@ -1,0 +1,5 @@
+name = form_example
+description = "form_example module is simple module."
+version = "7.x"
+core = "7.x"
+ 

@@ -1,0 +1,6 @@
+name = test
+description = "test module"
+core = 7.x
+version = "7.x"
+core = "7.x"
+project = "test"
