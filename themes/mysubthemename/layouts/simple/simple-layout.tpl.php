@@ -49,7 +49,6 @@ jQuery(document).ready(function(){
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
-      <?php //print $feed_icons; ?>
     </div>
 
   </div>
@@ -59,7 +58,7 @@ jQuery(document).ready(function(){
 	<div class="clear"></div>
     <div class="footer_bottom">
      <img src="sites/default/files/oranjebalk.gif">	 	<div class="clear"></div>
-	 &copy; All Rights Reserved.
+	 Cookies toegestaa. Voorker wijzigen
 	</div>
   </footer>
 </div>

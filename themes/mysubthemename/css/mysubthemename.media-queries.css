@@ -1,4 +1,11 @@
-@media screen and (max-width: 320px) {
+ /*http://www.andreasnorman.com/css-media-queries-for-mobile-devices/
+ CSS Media Queries for Mobile Devices - Blog of Andreas Norman Blog of Andreas Norman
+ */
+ /*@media screen and (max-width: 320px) {*/
+ /* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
 	body {
 	  font-family: Verdana,Helvetica,sans-serif;
 	  background: #ccc;
@@ -9,7 +16,6 @@
 	.mobile_menu {
       display:block;
 	  cursor:pointer;
-	/*  width:100%;*/
 	  border:1px solid #ccc;
       background-color:#000;
 	  color:#fff;
@@ -37,8 +43,66 @@
 	.expand_menu { 
 	  display:none;  
 	}
+	.node__content {
+    border-top: 7px solid orange;
+}
+.node_details {
+    width: 100%;
+}
+.node_row {
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    margin-top: 13px;
+    min-height: 66px;
+    width: 100%;
+}
+.row{
+  float:left;
+}
+.question {
+  vertical-align: middle;
+}
+.next-arrow {
+float:right;
+}
+.row.colum1 {
+    border: 1px solid #d9ebf7;
+    padding: 5px;
+    width: 96%;
+	text-align: center;
+}
+.row.colum2 {
+    margin-left: 0px;
+    width: 100%;
+	text-align: center;
+}
+.row.colum3 {
+    width: 100%;
+	text-align: center;
+}
+.row.colum4_detail {
+    background-color: #d9ebf7;
+    border: 1px solid #d9ebf7;
+    padding: 5px;
+    text-align: center;
+    width: 96%;
+}
+
+	.breadcrumb{
+		padding: 0px;
+	} 
+	.breadcrumb  a{
+	 text-decoration:none;
+	} 
+	.breadcrumb li {
+		list-style: outside none none;
+		padding: 0px;
+	}
 	.login_status {
       display:none;
+    }
+	.node__content {
+      border-top: 7px solid orange;
     }
 	.colum-1 , .colum-2,  .colum-3, .colum-4
 	{
@@ -46,14 +110,61 @@
 		margin-left: 15px;
 		margin-right: 0;
 	}
-
 	.footer_top {
 		background-color:#D9EBF7;
-		/*min-height:615px;*/
 	}
 }
-
-@media screen and (min-width: 1024px) { 
+/* tablet */
+@media all and (max-width: 1024px) {
+  /* not using */
+}
+/*
+ @media screen and (max-width: 641px) {
+ body {
+	  font-family: Verdana,Helvetica,sans-serif;
+	  background: #ccc;
+	}
+	.expand_menu {
+   		margin-top: 0px;
+	}
+	.mobile_menu {
+      display:block;
+	  cursor:pointer;
+	  border:1px solid #ccc;
+      background-color:#000;
+	  color:#fff;
+	  font-weight:bold;
+    }
+	.mobile_menu span {
+	  padding-left:5px;
+	  font-size:14px;
+	}
+	.menu {
+	  margin:0px;
+	  width:100%;
+      background-color:#000;
+	  height:auto;
+	  padding:0px;
+	}
+    .menu li {
+	  float: none;
+      width: 85%;
+	  padding:10px;
+    }
+	.menu li a{
+      color:#fff;
+	}
+	.expand_menu { 
+	  display:none;  
+	}
+  .row.colum1 {
+    border: 1px solid;
+    padding: 5px;
+    width: 24%;
+  }
+ }
+*/
+@media screen and (min-width: 1024px) {
 img, media {
   max-width: 100%;
 }
@@ -102,10 +213,10 @@ body {
 }
 .menu {
   margin-top:10px;
-  border:1px solid #ccc;
   background-color:#000;
   height:32px;
   padding-left: 0px;
+  border-bottom: 6px solid #d9ebf7;
 }
 .menu .leaf {
   list-style-image: none;
@@ -124,12 +235,63 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Droid Sans",sans-serif;
-
-	 letter-spacing: 0.75px;
+    letter-spacing: 0.75px;
 }
 
 .l-main, .l-footer {
     padding:5px;
+}
+.node__content {
+    border-top: 7px solid orange;
+}
+.node_details {
+    width: 100%;
+}
+.node_row {
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    margin-top: 13px;
+    min-height: 66px;
+    width: 100%;
+}
+.row{
+  float:left;
+}
+.question {
+  vertical-align: middle;
+}
+.next-arrow {
+float:right;
+}
+.row.colum1 {
+    border: 1px solid #d9ebf7;
+    padding: 5px;
+    width: 28%;
+}
+.row.colum2 {
+    margin-left: 20px;
+    width: 20%;
+}
+.row.colum3 {
+    width: 20%;
+}
+.row.colum4_detail {
+    background-color: #d9ebf7;
+    border: 1px solid #d9ebf7;
+    padding: 5px;
+    text-align: center;
+    width: 25%;
+}
+.breadcrumb{
+	padding: 0px;
+	margin-top: -12px;
+} 
+.breadcrumb  a{
+ text-decoration:none;
+} 
+.breadcrumb li {
+    list-style: outside none none;
+	padding: 0px;
 }
 .content_bottom{
    width: 98%;
@@ -141,14 +303,14 @@ h1, h2, h3, h4, h5, h6 {
  padding:0px;
 }
 .footer_top  li {
-  list-style:none;
+  list-style: outside url("/test/sites/default/files/16px-Icon_External_Link.svg.png") none;
+  margin-left: 22px;
 }
 .footer_top  li a{
   color:#154273;
 }
 .footer_top {
   background-color:#D9EBF7;
- /* min-height:200px;*/
 }
 .grid1, .grid2, .grid3, .grid4{
 	display: inline;
@@ -175,6 +337,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0;
   width: 30%;
 }
+.footer_top .block__content{
+
+border-right-width: 40px;
+margin-left: 30px;
+margin-right: 40px;
+}
+
 .footer_bottom {
     height: 36px;
     margin-top: 0px;
